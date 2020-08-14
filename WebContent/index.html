@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GroceryStore</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+<link href="stylec.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Welcome to Kavitha's Grocery Mart</h1>
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+		<tr>
+			<td>Apple</td>
+			<td>1.99</td>
+			<td><span class="grocery" id="Apple">0</span></td>
+			<td><input type="button" value="Add to cart"
+				onclick="addToCart('Apple',1.99)" /></td>
+
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>3.99</td>
+			<td><span class="grocery" id="Orange">0</span></td>
+			<td><input type="button" value="Add to cart"
+				onclick="addToCart('Orange',3.99)" /></td>
+
+
+		</tr>
+		<tr>
+			<td>Pear</td>
+			<td>2.99</td>
+			<td><span class="grocery" id="Pear">0</span></td>
+			<td><input type="button" value="Add to cart"
+				onclick="addToCart('Pear',2.99)" /></td>
+
+
+		</tr>
+		<tr>
+			<td>Carrot</td>
+			<td>1.99</td>
+			<td><span class="grocery" id="Carrot">0</span></td>
+			<td><input type="button" value="Add to cart"
+				onclick="addToCart('Carrot',1.99)" /></td>
+
+
+		</tr>
+		<tr>
+			<td>Spinach</td>
+			<td>1.99</td>
+			<td><span class="grocery" id="Spinach">0</span></td>
+			<td><input type="button" value="Add to cart"
+				onclick="addToCart('Spinach',4.99)" /></td>
+
+
+		</tr>
+	</table>
+	<p></P>
+	<input type="button" value="Checkout" onclick="printCart()" />
+	<p></P>
+
+	<script src="script.js"></script>
+</body>
+</html>
